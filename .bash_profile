@@ -42,8 +42,9 @@ alias 'scs'='./script/server --debugger'
 
 function bookmark {
   case "$1" in
-    fingerbird)  pushd /Users/aizat/src/klue/fingerbird ;;
-    frug)        pushd /Users/aizat/src/klue/frug ;;  
+    locum-heroku)  pushd /Users/nicholas/Sites/locum-heroku ;;
+    locum)         pushd /Users/nicholas/Sites/locum ;;
+    koluni)        pushd /Users/nicholas/Sites/koluni-heroku ;;
     gems)        pushd /opt/local/lib/ruby/gems/1.8/gems ;;
     ges)         pushd /Users/aizat/src/jaringandata/ges ;;  
     haze)        pushd /Users/aizat/src/haze.net.my ;;
