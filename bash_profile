@@ -25,7 +25,8 @@ if [ -d /opt/local/man ]; then
   export MANPATH=/opt/local/man:$MANPATH
 fi
 
-export PATH=/opt/local/bin:/opt/local/sbin:/Users/aizat/bin:/Applications/android-sdk-mac_x86/tools:/opt/local/lib/postgresql83/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/Applications/android-sdk-mac_x86/tools:/opt/local/lib/postgresql83/bin:$PATH
+
 alias pign=ping
 alias mvimdiff='mvim -d'
 alias 'll'='ls -lAgh'
@@ -40,6 +41,14 @@ alias 'scc'='./script/console --debugger'
 alias 'scr'='./script/runner'
 alias 'scs'='./script/server --debugger'
 
+# rails 3.x.x related
+alias 'runner'='./script/runner'
+alias 'sca'='./script/autospec'
+alias 'scc'='rails c --debugger'
+alias 'scr'='./script/runner'
+alias 'scs'='./script/server --debugger'
+
+# bookmark function
 function bookmark {
   case "$1" in
     locum-heroku)  pushd /Users/nicholas/Sites/locum-heroku ;;
@@ -99,10 +108,6 @@ magenta=$'\e[1;35m'
 normal_colours=$'\e[m'
 
 PS1="${PS1:0:$((${#PS1} - 3))}\[$green\]\$git_branch\[$normal_colours\]\$ "
-
-##
-# Your previous /Users/aizat/.bash_profile file was backed up as /Users/aizat/.bash_profile.macports-saved_2009-09-14_at_14:56:56
-##
 
 # MacPorts Installer addition on 2009-09-14_at_14:56:56: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
