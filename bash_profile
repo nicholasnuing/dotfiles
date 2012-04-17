@@ -25,7 +25,7 @@ if [ -d /opt/local/man ]; then
   export MANPATH=/opt/local/man:$MANPATH
 fi
 
-export PATH=/opt/local/bin:/opt/local/sbin:/Applications/android-sdk-mac_x86/tools:/opt/local/lib/postgresql83/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:~/src/android-sdk-macosx/tools:~/src/android-sdk-macosx/platform-tools:/opt/local/lib/postgresql83/bin:$PATH
 
 alias pign=ping
 alias mvimdiff='mvim -d'
