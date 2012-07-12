@@ -1,3 +1,5 @@
+PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Terminal Colors
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
@@ -18,13 +20,22 @@ export COLOR_BROWN='e[0;33m'
 export COLOR_YELLOW='e[1;33m'
 export COLOR_GRAY='e[1;30m'
 export COLOR_LIGHT_GRAY='e[0;37m'
-#alias ls='ls -lah'
 alias colorslist="set | egrep 'COLOR_w*'"
-alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
-alias mysqlstop="sudo /opt/local/share/mysql5/mysql/mysql.server stop"
-alias apachestart="sudo httpd -k start"
+
+# Application Shortcuts
+alias itunes="open /Applications/iTunes.app"
+
+# Services
+alias pgstart="postgres -D /usr/local/var/postgres"
+#alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
+#alias mysqlstop="sudo /opt/local/share/mysql5/mysql/mysql.server stop"
+#alias apachestart="sudo httpd -k start"
+#alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql83/bin/postgres -D /opt/local/var/db/postgresql83/defaultdb'"
+
+# SSH Related
+alias nyancat="ssh -v nyan@nyan.tandemic.com -p 2222"
+alias tanduser="ssh -v tanduser@tandemic.com -p 22"
+#alias gitorious="ssh -v git@git.tandemic.com"
 alias moled="ssh molebase1@mole.urekalabs.com"
 alias mole="cd ~/Sites/mole_web/"
 alias molest="ssh moleadm@mole.my -p 2346"
-alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql83/bin/postgres -D /opt/local/var/db/postgresql83/defaultdb'"
-alias itunes="open /Applications/iTunes.app"
