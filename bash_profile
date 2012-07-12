@@ -9,7 +9,7 @@ for i in apache2/bin lib/mysql5/bin lib/postgresql82/bin; do
   export PATH=/opt/local/$i:$PATH
 done
 
-PATH=$PATH:/usr/local/bin
+PATH=/usr/local/bin:$PATH
 
 #if [ -d /opt/local/apache2/bin ]; then
 #  export PATH=/opt/local/apache2/bin:$PATH
@@ -51,6 +51,7 @@ alias 'scs'='./script/server --debugger'
 # bookmark function
 function bookmark {
   case "$1" in
+    bridge)      pushd /Users/nicholasnuing/Sites/wordpress/wp-content/ ;;
     locum-heroku)  pushd /Users/nicholas/Sites/locum-heroku ;;
     locum)         pushd /Users/nicholas/Sites/locum ;;
     koluni)        pushd /Users/nicholas/Sites/koluni-heroku ;;
@@ -103,14 +104,17 @@ function find_git_branch {
 
 PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
 
-green=$'\e[1;32m'
-magenta=$'\e[1;35m'
+red=$'\e[0;31m'
+purple=$'\e[0;35m'
+bgreen=$'\e[1;32m'
+bblue=$'\e[1;34m'
+bmagenta=$'\e[1;35m'
 normal_colours=$'\e[m'
 
-PS1="${PS1:0:$((${#PS1} - 3))}\[$green\]\$git_branch\[$normal_colours\]\$ "
+PS1="${PS1:0:$((${#PS1} - 3))}\[$bblue\]\$git_branch\[$normal_colours\]\$ "
 
 # MacPorts Installer addition on 2009-09-14_at_14:56:56: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
