@@ -52,6 +52,7 @@ alias 'scs'='./script/server --debugger'
 function bookmark {
   case "$1" in
     bridge)      pushd /Users/nicholasnuing/Sites/wordpress/wp-content/ ;;
+    idea)        pushd /Users/nicholasnuing/Sites/ideafoundation/wp-content/ ;;
     locum-heroku)  pushd /Users/nicholas/Sites/locum-heroku ;;
     locum)         pushd /Users/nicholas/Sites/locum ;;
     koluni)        pushd /Users/nicholas/Sites/koluni-heroku ;;
