@@ -9,7 +9,7 @@ for i in apache2/bin lib/mysql5/bin lib/postgresql82/bin; do
   export PATH=/opt/local/$i:$PATH
 done
 
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/usr/local/freetds/bin:$PATH
 
 #if [ -d /opt/local/apache2/bin ]; then
 #  export PATH=/opt/local/apache2/bin:$PATH
@@ -25,7 +25,7 @@ if [ -d /opt/local/man ]; then
   export MANPATH=/opt/local/man:$MANPATH
 fi
 
-export PATH=/opt/local/bin:/opt/local/sbin:~/src/android-sdk-macosx/tools:~/src/android-sdk-macosx/platform-tools:/opt/local/lib/postgresql83/bin:$PATH
+# export PATH=/opt/local/bin:/opt/local/sbin:~/src/android-sdk-macosx/tools:~/src/android-sdk-macosx/platform-tools:/opt/local/lib/postgresql83/bin:$PATH
 
 alias pign=ping
 alias mvimdiff='mvim -d'
