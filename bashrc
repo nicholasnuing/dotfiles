@@ -27,6 +27,8 @@ alias itunes="open /Applications/iTunes.app"
 
 # Services
 alias pgstart="postgres -D /usr/local/var/postgres"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias zf="~/src/ZendFramework-1.11.12/bin/zf.sh"
 #alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
 #alias mysqlstop="sudo /opt/local/share/mysql5/mysql/mysql.server stop"
 #alias apachestart="sudo httpd -k start"
