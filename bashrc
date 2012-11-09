@@ -42,3 +42,7 @@ alias tanduser="ssh -v tanduser@tandemic.com -p 22"
 alias moled="ssh molebase1@mole.urekalabs.com"
 alias mole="cd ~/Sites/mole_web/"
 alias molest="ssh moleadm@mole.my -p 2346"
+alias dmp="ssh -v mpa@192.168.1.110"
+
+alias getonlocal="sudo route -n add 192.168.1.0/24 192.168.0.1"
+alias getofflocal="sudo route -n delete 192.168.1.0/24 192.168.0.1"
