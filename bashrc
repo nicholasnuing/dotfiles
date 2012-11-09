@@ -26,6 +26,7 @@ alias colorslist="set | egrep 'COLOR_w*'"
 alias itunes="open /Applications/iTunes.app"
 
 # Services
+#alias pgstart="pg_ctl -D /usr/local/var/postgres -l logfile start"
 alias pgstart="postgres -D /usr/local/var/postgres"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias zf="~/src/ZendFramework-1.11.12/bin/zf.sh"
@@ -41,6 +42,13 @@ alias tanduser="ssh -v tanduser@tandemic.com -p 22"
 alias moled="ssh molebase1@mole.urekalabs.com"
 alias mole="cd ~/Sites/mole_web/"
 alias molest="ssh moleadm@mole.my -p 2346"
+<<<<<<< HEAD
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+=======
+alias dmp="ssh -v mpa@192.168.1.110"
+
+alias getonlocal="sudo route -n add 192.168.1.0/24 192.168.0.1"
+alias getofflocal="sudo route -n delete 192.168.1.0/24 192.168.0.1"
+>>>>>>> 09851849b5bd62d3b958610dc8646bbfd605a5a6
