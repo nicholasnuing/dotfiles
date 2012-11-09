@@ -26,6 +26,7 @@ alias colorslist="set | egrep 'COLOR_w*'"
 alias itunes="open /Applications/iTunes.app"
 
 # Services
+#alias pgstart="pg_ctl -D /usr/local/var/postgres -l logfile start"
 alias pgstart="postgres -D /usr/local/var/postgres"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias zf="~/src/ZendFramework-1.11.12/bin/zf.sh"
