@@ -41,3 +41,6 @@ alias tanduser="ssh -v tanduser@tandemic.com -p 22"
 alias moled="ssh molebase1@mole.urekalabs.com"
 alias mole="cd ~/Sites/mole_web/"
 alias molest="ssh moleadm@mole.my -p 2346"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
