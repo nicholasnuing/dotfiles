@@ -25,6 +25,10 @@ if [ -d /opt/local/man ]; then
   export MANPATH=/opt/local/man:$MANPATH
 fi
 
+if [ -f ~/.git-completion.bash ] ; then
+  . ~/.git-completion.bash
+fi
+
 # export PATH=/opt/local/bin:/opt/local/sbin:~/src/android-sdk-macosx/tools:~/src/android-sdk-macosx/platform-tools:/opt/local/lib/postgresql83/bin:$PATH
 
 alias pign=ping
