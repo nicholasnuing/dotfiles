@@ -6,3 +6,5 @@
 	co = checkout
 	br = branch
   c = commit
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
