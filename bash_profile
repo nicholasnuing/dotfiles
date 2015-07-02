@@ -51,6 +51,7 @@ alias 'scs'='./script/server --debugger'
 # bookmark function
 function bookmark {
   case "$1" in
+    bph)      pushd /Users/dapatvista/Sites/jqm/bph/ ;;
     bridge)      pushd /Users/nicholasnuing/Sites/wordpress/wp-content/ ;;
     idea)        pushd /Users/nicholasnuing/Sites/ideafoundation/wp-content/ ;;
     locum-heroku)  pushd /Users/nicholas/Sites/locum-heroku ;;
@@ -101,6 +102,11 @@ function find_git_branch {
         dir="../$dir"
     done
     git_branch=''
+}
+
+# Faster mkdir command
+function md() {
+  mkdir $1 && cd $1
 }
 
 PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
