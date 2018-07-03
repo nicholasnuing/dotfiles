@@ -1,4 +1,7 @@
 source ~/.bashrc
+source ~/.work_profile
+source ~/.term_colours
+
 
 # bash-completion
 if [ -f /opt/local/etc/bash_completion ]; then
@@ -127,3 +130,6 @@ PS1="${PS1:0:$((${#PS1} - 3))}\[$bblue\]\$git_branch\[$normal_colours\]\$ "
 
 # android related
 # export PATH=/Application/android-sdk-mac_x86/tools
+
+export NVM_DIR="/Users/nicholas.rengga/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
