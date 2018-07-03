@@ -107,11 +107,6 @@ function find_git_branch {
     git_branch=''
 }
 
-# Faster mkdir command
-function md() {
-  mkdir $1 && cd $1
-}
-
 PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
 
 red=$'\e[0;31m'
